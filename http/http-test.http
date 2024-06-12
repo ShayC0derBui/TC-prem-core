@@ -1,0 +1,17 @@
+### Register User
+POST http://localhost:8173/api/auth/register
+Content-Type: application/json
+
+{
+  "firstname": "Ali",
+  "lastname": "Bouali",
+  "email":  "alibou21@mail.com",
+  "password": "password",
+  "role":  "ADMIN"
+}
+
+> {% client.global.set("auth-token", response.body.access_token);  %}
+
+### Query the Demo endpoint
+GET http://localhost:8173/api/demo-controller
+Authorization: Bearer {{auth-token}}
