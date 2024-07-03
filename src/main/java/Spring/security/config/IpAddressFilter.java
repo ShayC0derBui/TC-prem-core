@@ -22,7 +22,7 @@ public class IpAddressFilter extends OncePerRequestFilter {
     private static final String LOCALHOST_V6 = "0:0:0:0:0:0:0:1";
     private static final String LOCALHOST_V4 = "127.0.0.1";
 
-    List<String> allowedIpRanges = List.of("220.246.145.56","220.246.229.34", "219.78.176.216", "58.153.10.102", "127.0.0.1");
+    List<String> allowedIpRanges = List.of("42.2.198.72", "127.0.0.1");
 
 
     @Override
