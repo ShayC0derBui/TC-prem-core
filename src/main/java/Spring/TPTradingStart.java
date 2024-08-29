@@ -54,6 +54,25 @@ public class TPTradingStart {
                     .role(Role.ADMIN)
                     .build();
             System.out.println("Felix token: " + service.register(felixCelesty).getAccessToken());
+
+            var tonnochySubOne = RegisterRequest.builder()
+                    .firstname("Mr")
+                    .lastname("TonnochySubOne")
+                    .email("tonnochy.binance.sub.one@gmail.com")
+                    .password("TonnochySubOne")
+                    .role(Role.ADMIN)
+                    .build();
+            System.out.println("TonnochySubOne token: " + service.register(tonnochySubOne).getAccessToken());
+
+            var tonnochySubTwo = RegisterRequest.builder()
+                    .firstname("Mr")
+                    .lastname("TonnochySubTwo")
+                    .email("tonnochy.binance.sub.two@gmail.com")
+                    .password("TonnochySubTwo")
+                    .role(Role.ADMIN)
+                    .build();
+            System.out.println("TonnochySubTwo token: " + service.register(tonnochySubTwo).getAccessToken());
+
             var felix0 = RegisterRequest.builder()
                     .firstname("Mr")
                     .lastname("Felix0")

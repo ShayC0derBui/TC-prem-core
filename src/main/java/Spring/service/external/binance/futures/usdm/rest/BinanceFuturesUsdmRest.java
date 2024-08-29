@@ -30,11 +30,9 @@ import static Spring.utils.constants.binance.BinanceConstants.*;
 
 public class BinanceFuturesUsdmRest {
     private final BinanceHttpClient binanceHttpClient;
-    @Autowired
     private final ObjectMapper objectMapper;
     private final KeyService keyservice;
 
-    @Autowired
     public BinanceFuturesUsdmRest(BinanceHttpClient binanceHttpClient, ObjectMapper objectMapper, KeyService keyService) {
         this.objectMapper = objectMapper;
         this.binanceHttpClient = binanceHttpClient;
@@ -350,4 +348,5 @@ public class BinanceFuturesUsdmRest {
         System.out.println(response);
         return objectMapper.readTree(response);
     }
+
 }

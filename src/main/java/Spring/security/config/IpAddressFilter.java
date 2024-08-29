@@ -22,6 +22,8 @@ public class IpAddressFilter extends OncePerRequestFilter {
     private static final String LOCALHOST_V6 = "0:0:0:0:0:0:0:1";
     private static final String LOCALHOST_V4 = "127.0.0.1";
 
+    // localhost is the prod ip
+    // 42.2.198.72 is the tonnochycapital.store ip
     List<String> allowedIpRanges = List.of("42.2.198.72", "127.0.0.1");
 
 

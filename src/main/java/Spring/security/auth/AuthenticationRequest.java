@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AuthenticationRequest {
-
     private String password;
     private String email;
     private String gateioApiKey;
@@ -22,5 +21,4 @@ public class AuthenticationRequest {
     private String binanceApiSecret;
     private String bybitApiKey;
     private String bybitApiSecret;
-
 }
