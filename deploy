@@ -1,0 +1,9 @@
+#!/bin/bash
+
+git pull
+appPid=$(lsof -i :8173 | grep java | awk '{print $2}')
+if [ -n "$appPid" ]; then
+  kill -9 $appPid
+fi
+mvn clean install
+java -jar target/TP-Trading-Core-1.0-SNAPSHOT.jar
