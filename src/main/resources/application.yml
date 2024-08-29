@@ -3,8 +3,8 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/jwt_security
-    username: premkumarsinha
-    password: premks8057
+    username: prem
+    password: prem
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
