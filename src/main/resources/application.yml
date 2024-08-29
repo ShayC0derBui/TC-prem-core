@@ -23,6 +23,3 @@ application:
       expiration: 92233700000000 # a day
       refresh-token:
         expiration: 9223300000000 # 7 days
-
-    allowedIpAddresses: 219.78.176.216
-
